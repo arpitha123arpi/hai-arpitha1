@@ -5,7 +5,9 @@ if(error)
 throw error;
 console.log("The contained:",text);
 });
-fs.writeFile("ex1.txt",text,function(error)
+var sma='github';
+var upp=toUpperCase(sma);
+fs.writeFile("ex1.txt",upp,function(error)
 {
 if(err)
 throw err;
