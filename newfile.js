@@ -1,13 +1,13 @@
 var fs = require("fs");
-fs.readFile("ex.txt","utf-8",function(error,text)
+fs.readFile("ex1","utf-8",function(error,text)
 {
 if(error)
 throw error;
 console.log("The contained:",text);
 });
-var sma='github';
-var upp=toUpperCase(sma);
-fs.writeFile("ex1.txt",upp,function(error)
+var sma ='github';
+var upp = sma.toUpperCase(sma);
+fs.writeFile("ex.txt",upp,function(err)
 {
 if(err)
 throw err;
